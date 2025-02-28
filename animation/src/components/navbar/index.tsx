@@ -1,20 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi"; // Icons from react-icons
+import { FiMenu, FiX } from "react-icons/fi";
 import { pages } from "../../utils";
-import { Button } from "antd";
 const Navbar = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
-
   return (
-    <div className="p-4  flex justify-between items-center relative shadow-md">
+    <div className="p-4 flex justify-around items-center">
       {/* Logo */}
       <img
         src="https://jabuanimation.uz/images/88/13397998/Logo.png"
         alt="logo"
-        className="w-20 md:w-24 object-contain"
       />
 
       {/* Mobile menu button */}
@@ -26,7 +23,7 @@ const Navbar = () => {
       </button>
 
       {/* Desktop menu */}
-      <div className="hidden md:flex items-center gap-6">
+      <div className="hidden md:flex text-[grey] items-center  gap-9">
         {pages.map((val, index) => (
           <h3
             key={index}
@@ -55,12 +52,6 @@ const Navbar = () => {
           ))}
         </div>
       )}
-      <Button
-        size="middle"
-        className="sm:hidden !bg-[#FD6F00] text-[16px] !text-white font-600"
-      >
-        Kontakt
-      </Button>
     </div>
   );
 };
