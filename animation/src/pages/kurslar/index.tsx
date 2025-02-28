@@ -3,25 +3,31 @@ import { FaUsers } from "react-icons/fa6";
 
 const Curses = () => {
   return (
-    <div className="bg-black text-white !mt-[20px] !p-6 !py-6 text-center">
-      <h2 className="text-4xl font-700">Services</h2>
-      <p className="text-[20px] font-500 text-[grey]">
-        Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
-        felis ligula aliquam
-      </p>
+    <div className="bg-black text-white mt-5 p-4 py-6 flex items-center justify-center flex-col gap-6">
+      <div className="flex items-center justify-center flex-col gap-4 text-center !mb-6 !mt-[30px]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Services</h2>
+        <p className=" sm:text-lg md:text-xl font-medium text-gray-400 mt-2 max-w-2xl ">
+          Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
+          felis ligula aliquam
+        </p>
+      </div>
 
       {/* Grid qismi */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 !p-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3   gap-4 mt-8 !p-4">
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-[#321818] text-black rounded-lg shadow-lg flex flex-col w-[350px] h-[320px] !p-8 items-center text-center"
+            className="bg-[#321818] text-black rounded-lg shadow-lg flex flex-col justify-around items-center text-center !p-4 w-full max-w-[350px] h-auto min-h-[280px] mx-auto"
           >
-            <FaUsers className="text-orange-500 text-5xl" />
-            <h3 className="text-xl font-bold text-center  text-orange-500 ">
-              {service.title}
-            </h3>
-            <p className="text-gray-600 !mt-6">{service.description}</p>
+            <div className="flex items-center justify-center flex-col gap-2">
+              <FaUsers className="text-orange-500 text-3xl sm:text-4xl md:text-5xl" />
+              <h3 className="text-lg sm:text-xl font-bold text-orange-500 mt-4">
+                {service.title}
+              </h3>
+            </div>
+            <p className="text-gray-600 text-sm sm:text-base mt-4">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>
