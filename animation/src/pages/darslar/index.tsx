@@ -8,17 +8,17 @@ const Lessons = () => {
   return (
     <div>
       <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={3000}>
-        <div>
-          <img src={lula} alt="rasm" />
+        <div className="w-90% flex items-center justify-center m-auto  ">
+          <img className="h-[700px] w-full" src={lula} alt="rasm" />
         </div>
         <div>
-          <img src={lulu} alt="rasm" />
+          <img className="h-[700px] w-full" src={lulu} alt="rasm" />
         </div>
         <div>
-          <img src={nan} alt="rasm" />
+          <img className="h-[700px] w-full" src={nan} alt="rasm" />
         </div>
         <div>
-          <img src={nana} alt="rasm" />
+          <img className="h-[700px] w-full" src={nana} alt="rasm" />
         </div>
       </Carousel>
     </div>
