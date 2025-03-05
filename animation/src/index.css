@@ -35,3 +35,26 @@
 .animate-drop {
   animation: drop 0.5s ease-in-out forwards;
 }
+.bg1{
+  background-image: url("https://optim.tildacdn.one/tild6366-6535-4131-b939-666532346536/-/format/webp/photo_2025-01-23_16-.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Animatsiya uchun keyframes */
+@keyframes pulse-rotate {
+  0% {
+    transform:  rotate(0deg);
+  }
+  50% {
+    transform:  rotate(25deg);
+  }
+  100% {
+    transform:  rotate(0deg);
+  }
+}
+
+/* Animatsiya sinfi */
+.animate-pulse-rotate {
+  animation: pulse-rotate 1s ease infinite;
+}
