@@ -45,8 +45,8 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-[30px] min-h-screen m-auto ">
-      <div className="bg-black text-white mt-5 flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-9 py-6">
+    <div className="flex flex-col  gap-[30px] min-h-screen m-auto ">
+      <div className="bg text-white mt-5 flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-9 py-6">
         <div className="md:w-1/2 flex flex-col gap-4 p-4 text-center md:text-left">
           <p className="text-gray-300 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
             Hi I am

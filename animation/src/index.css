@@ -20,3 +20,18 @@
   background-position: center;
   background-size: cover;
 }
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-drop {
+  animation: drop 0.5s ease-in-out forwards;
+}

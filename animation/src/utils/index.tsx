@@ -1,10 +1,11 @@
 import Lessons from "../pages/darslar";
 import Home from "../pages/home";
 import Curses from "../pages/kurslar";
-import Call from "../pages/murojat";
 import About from "../pages/o'zim_haqimda";
 import Students from "../pages/shogirtlar";
+import Footer from "../components/footer";
 import { PagesType } from "../types";
+import Call from "../pages/murojat";
 
 export const pages: PagesType[] = [
   {
