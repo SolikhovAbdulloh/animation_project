@@ -1,7 +1,4 @@
-import { Progress } from "antd";
 import model from "../../assets/Model.png";
-import { skills } from "../../utils/about";
-import figma from "../../assets/figma.svg";
 const About = () => {
   return (
     <div className=" text-black mt-[20px] pt-[30px] min-h-screen">
