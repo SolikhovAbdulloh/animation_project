@@ -87,7 +87,7 @@ const Home = () => {
         </div>
 
         <div className="mt-6 md:mt-0 px-4">
-          <div className="relative py-3 w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] mx-auto">
+          <div className="relative py-3 w-full max-w-[150px] sm:max-w-[300px] md:max-w-[250px] lg:max-w-[300px] mx-auto">
             <div className="absolute inset-0 rounded-xl border-2 border-orange-300 bg-white animate-twirl-glow shadow-md transform transition-all duration-300 hover:scale-105">
               <div className="absolute inset-0 bg-orange-300 opacity-20 animate-twirl-spin"></div>
               <div className="absolute top-[-20px] left-[-20px]  bg-white rounded-full flex items-center justify-center border-2 border-orange-300 shadow-sm animate-bounce">
