@@ -1,4 +1,3 @@
-import {motion} from "framer-motion"
 const Students = () => {
   return (
     <div className="flex items-center flex-col justify-around gap-[30px] ">
