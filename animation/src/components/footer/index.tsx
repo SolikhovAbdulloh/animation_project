@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram} from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 import { SlEnvolope } from "react-icons/sl";
 import { IoCallOutline } from "react-icons/io5";
-import log from "../../assets/logo_lola.png";
+import log from "../../public/logo_lola.png";
 
 const Footer = () => {
   const navigate = useNavigate();

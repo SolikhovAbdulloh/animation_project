@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa6";
-import model from "../../assets/Model.png";
+import model from "../../public/Model.png";
 import { Carousel } from "antd";
-import lula from "../../assets/lula.png";
-import nan from "../../assets/lulu.png";
-import nana from "../../assets/nana.png";
-import lulu from "../../assets/lulu_nana.png";
+import lula from "../../public/lula.png";
+import nan from "../../public/lulu.png";
+import nana from "../../public/nana.png";
+import lulu from "../../public/lulu_nana.png";
 import { motion, useInView } from "framer-motion"; 
 import { useNavigate } from "react-router-dom";
 const images = [lula, nan, nana, lula, lulu, nan, nana];
@@ -176,14 +176,14 @@ const Home = () => {
         className="h-[600px] flex items-center justify-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
       >
         <div className="flex items-center justify-between gap-4">
-          <video controls className="w-[100%] h-[500px]">
+          <video controls className="w-[50%] h-[500px]">
             <source
               type="video/mp4"
-              src="/src/assets/videos/Final_with-render-2.mp4"
+              src="/src/public/videos/Final_with-render-2.mp4"
             />
           </video>
-          <video controls className="w-[100%] h-[500px]">
-            <source type="video/mp4" src="/src/assets/videos/final.mp4" />
+          <video controls className="w-[50%] h-[500px]">
+            <source type="video/mp4" src="/src/public/videos/final.mp4" />
           </video>
         </div>
       </motion.div>

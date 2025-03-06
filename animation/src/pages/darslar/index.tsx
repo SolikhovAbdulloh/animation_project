@@ -1,8 +1,8 @@
 import { Carousel } from "antd";
-import lula from "../../assets/lula.png";
-import nan from "../../assets/lulu.png"
-import nana from "../../assets/nana.png";
-import lulu from "../../assets/lulu_nana.png"
+import lula from "../../public/lula.png";
+import nan from "../../public/lulu.png"
+import nana from "../../public/nana.png";
+import lulu from "../../public/lulu_nana.png"
 const Lessons = () => {
  
   return (

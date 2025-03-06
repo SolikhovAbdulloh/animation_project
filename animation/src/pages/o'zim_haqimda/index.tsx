@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
-import model from "../../assets/Model.png";
+import model from "../../public/Model.png";
 
 const About = () => {
   const textRef = React.useRef(null);
