@@ -17,7 +17,6 @@ const About = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen ">
-      {/* Background Image Section */}
       <div
         className="relative w-full h-[500px] bg-cover bg-center"
         style={{

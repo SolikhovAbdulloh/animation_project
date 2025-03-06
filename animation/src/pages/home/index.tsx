@@ -71,12 +71,12 @@ const Home = () => {
           </h1>
 
           <div className="flex gap-5 mt-4 justify-center md:justify-start">
-            <FaInstagram className="text-orange-500 w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 cursor-pointer hover:text-pink-600 transition-colors duration-200 animate-bounce" />
+            <FaInstagram className="text-orange-500 w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 cursor-pointer hover:text-[red] transition-colors duration-200 animate-bounce" />
             <FaFacebook className="text-orange-500 w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 cursor-pointer hover:text-blue-700 transition-colors duration-200 animate-bounce" />
             <FaTelegram className="text-orange-500 w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 cursor-pointer hover:text-cyan-400 transition-colors duration-200 animate-bounce" />
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-5 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 mt-5 justify-center md:justify-start ">
             <button
               onClick={() => navigate("/about")}
               className="bg-orange-500 text-white w-full sm:w-[180px] md:w-[200px] lg:w-[220px] h-12 md:h-13 lg:h-14 rounded-lg text-base md:text-lg font-bold hover:bg-orange-600 hover:scale-105 transition-all duration-300"
@@ -86,85 +86,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-6 md:mt-0 px-4">
-          <div className="relative py-3 w-full max-w-[150px] sm:max-w-[300px] md:max-w-[250px] lg:max-w-[300px] mx-auto">
-            <div className="absolute inset-0 rounded-xl border-2 border-orange-300 bg-white animate-twirl-glow shadow-md transform transition-all duration-300 hover:scale-105">
-              <div className="absolute inset-0 bg-orange-300 opacity-20 animate-twirl-spin"></div>
-              <div className="absolute top-[-20px] left-[-20px]  bg-white rounded-full flex items-center justify-center border-2 border-orange-300 shadow-sm animate-bounce">
-                <img src={nana} className="w-[150px] h-[150px]" alt="lulu" />
-              </div>
-              <div className="absolute bottom-[-20px] right-[-20px]  bg-white rounded-full flex items-center justify-center border-2 border-orange-300 shadow-sm animate-bounce">
-                <img src={lulu} className="w-[150px] h-[150px]" alt="lulu" />
-              </div>
-              <div className="absolute top-[-20px] right-[-20px] bg-white rounded-full flex items-center justify-center border-2 border-orange-300 shadow-sm animate-bounce-delayed">
-                <img src={nan} className="w-[150px] h-[150px]" alt="lulu" />
-              </div>
-              <div className="absolute bottom-[-20px] left-[-20px]  bg-white rounded-full flex items-center justify-center border-2 border-orange-300 shadow-sm animate-bounce-delayed">
-                <img src={lula} className="w-[150px] h-[150px]" alt="lulu" />
-              </div>
-            </div>
+        <div className="mt-6 px-4 flex justify-center sm:mt-[10px]">
+          <div className="w-full max-w-[450px] p-4  rounded-2xl cursor-pointer bg-gradient-to-r from-white to-orange-500 shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300">
             <img
               src={model}
-              alt="Model"
-              className="relative w-full h-auto rounded-lg object-cover z-10"
+              alt="logo"
+              className="w-full h-auto rounded-lg object-cover border-2 border-white"
             />
-            <style>{`
-              @keyframes twirlGlow {
-                0% {
-                  transform: rotate(0deg) scale(1);
-                }
-                25% {
-                  transform: rotate(90deg) scale(1.02);
-                }
-                50% {
-                  transform: rotate(180deg) scale(1);
-                }
-                75% {
-                  transform: rotate(270deg) scale(1.02);
-                }
-                100% {
-                  transform: rotate(360deg) scale(1);
-                }
-              }
-              @keyframes twirlSpin {
-                0% {
-                  transform: rotate(0deg);
-                }
-                100% {
-                  transform: rotate(360deg);
-                }
-              }
-              @keyframes bounce {
-                0%,
-                100% {
-                  transform: translateY(0);
-                }
-                50% {
-                  transform: translateY(-10px);
-                }
-              }
-              @keyframes bounceDelayed {
-                0%,
-                100% {
-                  transform: translateY(0);
-                }
-                50% {
-                  transform: translateY(-10px);
-                }
-              }
-              .animate-twirl-glow {
-                animation: twirlGlow 16s ease-in-out infinite;
-              }
-              .animate-twirl-spin {
-                animation: twirlSpin 12s linear infinite;
-              }
-              .animate-bounce {
-                animation: bounce 2s ease-in-out infinite;
-              }
-              .animate-bounce-delayed {
-                animation: bounceDelayed 2s ease-in-out infinite 0.5s;
-              }
-            `}</style>
           </div>
         </div>
       </motion.div>
@@ -175,11 +103,11 @@ const Home = () => {
         variants={sectionVariants}
         className="h-[600px] flex items-center justify-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
       >
-        <div className="flex items-center justify-between gap-4">
-          <video controls className="w-[50%] h-[500px]">
+        <div className="flex flex-col sm:flex-row items-center gap-4 px-2">
+          <video controls className="w-full sm:w-[50%] h-[200px] sm:h-[500px]">
             <source type="video/mp4" src="/videos/Final_with-render-2.mp4" />
           </video>
-          <video controls className="w-[50%] h-[500px]">
+          <video controls className="w-full sm:w-[50%] h-[200px] sm:h-[500px]">
             <source type="video/mp4" src="/videos/final.mp4" />
           </video>
         </div>
