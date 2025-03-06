@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { pages } from "../../utils";
-import logotip from "../../public/logo_lola.png";
+import logotip from "/logo_lola.png";
 
 const Navbar = () => {
   const navigate = useNavigate();

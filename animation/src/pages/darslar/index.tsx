@@ -1,10 +1,9 @@
 import { Carousel } from "antd";
-import lula from "../../public/lula.png";
-import nan from "../../public/lulu.png"
-import nana from "../../public/nana.png";
-import lulu from "../../public/lulu_nana.png"
+import lula from "/lula.png";
+import nan from "/lulu.png";
+import nana from "/nana.png";
+import lulu from "/lulu_nana.png";
 const Lessons = () => {
- 
   return (
     <div>
       <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={3000}>
