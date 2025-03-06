@@ -34,7 +34,7 @@ const Navbar = () => {
             key={index}
             className={`cursor-pointer transition-all duration-300 ease-in-out text-sm md:text-base hover:text-[#FD6F00] hover:border-b-2 hover:border-[#FD6F00] ${
               location.pathname === val.pages
-                ? "text-black border-b-2 border-black p-1"
+                ? "text-[#FD6F00] border-b-2 border-[#FD6F00] p-1"
                 : "border-b-2 border-transparent"
             }`}
             onClick={() => navigate(`${val.pages}`)}
@@ -56,7 +56,7 @@ const Navbar = () => {
             {pages.map((val, index) => (
               <h3
                 key={index}
-                className={`cursor-pointer py-4 text-white transition-all duration-300 ease-in-out w-full text-center text-lg font-medium hover:text-[#FD6F00] hover:bg-gray-600/30 rounded-md ${
+                className={`cursor-pointer py-4 text-[white] transition-all duration-300 ease-in-out w-full text-center text-lg font-medium hover:text-[#FD6F00] hover:bg-gray-600/30 rounded-md ${
                   location.pathname === val.pages
                     ? "text-[#FD6F00] bg-[#FD6F00] p-2"
                     : "text-white"

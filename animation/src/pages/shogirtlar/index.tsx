@@ -1,21 +1,18 @@
-import img1 from "../../assets/lula.png";
-import img2 from "../../assets/lulu.png";
+import {motion} from "framer-motion"
 const Students = () => {
   return (
-    <div className="flex items-center justify-around gap-[30px] ">
-      <div>
-        <p className="font-400 text-[44px] text-white">
-          Change your <br />
-          Digital Experience
-        </p>
-      </div>
-      <div className="flex items-center justify-center">
-        <div>
-          <img className="w-[200px] h-[200px]" src={img1} alt="" />
-        </div>
-        <div >
-          <img className="w-[250px]   h-[250px]" src={img2} alt="" />
-        </div>
+    <div className="flex items-center flex-col justify-around gap-[30px] ">
+      <div className="bg2 w-[100%] h-[300px]">Shogirtlar ijodidan</div>
+      <div className="w-[80%] flex flex-col gap-4">
+        <video className=" h-[500px]" controls>
+          <source src="/src/assets/videos/Husanjon-24.mp4" />
+        </video>
+        <video className=" h-[500px]" controls>
+          <source src="/src/assets/videos/Doniyor-13.mp4" />
+        </video>
+        <video className=" h-[500px]" controls>
+          <source src="/src/assets/videos/Doniyor-17.mp4" />
+        </video>
       </div>
     </div>
   );

@@ -41,6 +41,12 @@
   background-size: cover;
   background-position: center;
 }
+.bg2{
+  background-image: url("https://daryo.uz/cache/2020/07/ralp-728x455.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* Animatsiya uchun keyframes */
 @keyframes pulse-rotate {
   0% {
