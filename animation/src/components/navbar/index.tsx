@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center text-black !p-4">
+    <div className="flex navbar justify-between items-center text-black !p-4">
       {/* Logo */}
       <img
         alt="logo"
@@ -47,28 +47,44 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div
-          className={`fixed top-0 left-0 w-[70%] max-w-[300px] h-full bg-gradient-to-br from-gray-700 to-gray-900 p-6 flex flex-col items-center md:hidden shadow-2xl rounded-r-xl z-30 transition-transform duration-500 ease-in-out ${
+          className={`fixed top-0 left-0 h-full bg-gradient-to-b bg-[#ececec] p-6 flex justify-start z-30 transition-all duration-500 ease-in-out transform ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="w-full flex justify-end"></div>
-          <div className="flex flex-col items-center w-full mt-6">
-            {pages.map((val, index) => (
-              <h3
-                key={index}
-                className={`cursor-pointer py-4 text-[white] transition-all duration-300 ease-in-out w-full text-center text-lg font-medium hover:text-[#FD6F00] hover:bg-gray-600/30 rounded-md ${
-                  location.pathname === val.pages
-                    ? "text-[#FD6F00] bg-[#FD6F00] p-2"
-                    : "text-white"
-                }`}
-                onClick={() => {
-                  navigate(`${val.pages}`);
-                  setOpen(false);
-                }}
-              >
-                {val.title}
-              </h3>
-            ))}
+          <div
+            className="w-[250px] p-6 rounded-r-2xl shadow-2xl flex flex-col items-start gap-6 animate-slideRight"
+            style={{
+              animation: "slideRight 0.5s ease-out",
+            }}
+          >
+            {/* Close button */}
+          
+
+            {/* Menu links */}
+            {pages.map((val, index) => {
+              const isActive = location.pathname === val.pages;
+              return (
+                <button
+                  key={index}
+                  className={`w-[90%] py-3 px-5 rounded-lg text-lg font-medium flex justify-center text-center transition-all duration-500 transform 
+              ${
+                isActive
+                  ? "bg-gradient-to-r from-[#FF6200] to-[#FF8F00]  shadow-lg scale-105 ring-1 "
+                  : "bg-[##FF8F00]/50 hover:scale-105 hover:bg-gradient-to-r hover:from-[#FF6200]/60 hover:to-[#FF8F00]/60 hover:shadow-md"
+              }`}
+                  style={{
+                    animationDelay: `${index * 100}ms`,
+                    animationFillMode: "both",
+                  }}
+                  onClick={() => {
+                    navigate(val.pages);
+                    setOpen(false);
+                  }}
+                >
+                  {val.title}
+                </button>
+              );
+            })}
           </div>
         </div>
       )}

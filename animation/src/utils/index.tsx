@@ -1,6 +1,5 @@
 import Lessons from "../pages/darslar";
 import Home from "../pages/home";
-import Curses from "../pages/kurslar";
 import About from "../pages/o'zim_haqimda";
 import Students from "../pages/shogirtlar";
 import { PagesType } from "../types";
@@ -19,20 +18,15 @@ export const pages: PagesType[] = [
   },
 
   {
-    pages: "/curses",
-    component: <Curses />,
-    title: "Kurslar",
-  },
-  {
     pages: "/students",
     component: <Students />,
     title: " Shogirtlar",
   },
-  {
-    pages: "/lessons",
-    component: <Lessons />,
-    title: "Darslar",
-  },
+  // {
+  //   pages: "/lessons",
+  //   component: <Lessons />,
+  //   title: "Darslar",
+  // },
   {
     pages: "/call",
     component: <Call />,
